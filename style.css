@@ -4,6 +4,8 @@
 
     font-size: 15px;
     
+    font-family: 'Fredoka One', cursive;
+
 }
 
 /**********************/
@@ -247,6 +249,87 @@ h1{
 }
 
 .getInfosBtn:hover{
+
+    background-color: rgb(148, 36, 36);
+    color: white;
+    letter-spacing: 4px;
+    cursor: pointer;
+
+}
+
+
+
+/*********************/
+/*       MODLA       */
+/*********************/
+
+#modal{
+
+    position: absolute;
+
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    top: 0;
+
+    background-color: rgba(128, 128, 128, 0.75);
+
+    display: none;
+
+}
+
+#modalContent{
+
+    background-color: white;
+
+    width: 25%;
+    height: 25%;
+    margin: auto;
+    margin-top: 15%;
+    padding: 2rem;
+
+    border-radius: 1rem;
+
+    text-align: center;
+
+    display: grid;
+
+    grid-template: repeat(3, 1fr) / 1fr;
+    grid-gap: 1rem;
+
+}
+
+#modalContent > input{
+
+    text-align: center;
+    height: 2rem;
+    
+}
+
+#modalLogIn{
+
+    width: 90%;
+    height: 3rem !important;
+    margin-left: 5%;
+
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: rgb(172, 0, 0);
+    border-width: 3.5px;
+
+    background-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5rem;
+    color: rgb(148, 36, 36);
+    letter-spacing: 2px;
+    transition: 500ms;
+
+}
+
+#modalLogIn:hover{
 
     background-color: rgb(148, 36, 36);
     color: white;
