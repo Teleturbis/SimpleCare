@@ -112,6 +112,8 @@ body{
     background-size: 400%;
     background-position: left;
     -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
     color: transparent;
 
     animation-name: textAnimation;
@@ -135,6 +137,8 @@ h1{
     background-size: 400%;
     background-position: right;
     -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
     color: transparent;
 
     animation-name: textAnimation;
