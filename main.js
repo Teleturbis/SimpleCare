@@ -169,11 +169,67 @@ let patientenAkten = {
 
 }
 
-console.log(patientenAkten.a)
+/************************/
+/*        User          */
+/************************/
 
-/*let test = document.createElement("div");
-test.className = "eins";
+let users = [
 
-document.body.appendChild(test);*/
+    {
+        username : "SozialStationMusterstadt",
+        password : "123456abc",
+        adress : {
+            plz : 12345,
+            city : "Musterstadt",
+            street : "Musterstaße",
+            housenumber : "2a",
+            tel : "01234/12345",
+            email : "musteradresse@pflege.de"
+        },
+        patients : 541
+    },
+    {
+        username : "SozialStationBuxdehude",
+        password : "123456abc",
+        adress : {
+            plz : 12345,
+            city : "Buxdehude",
+            street : "Musterstaße",
+            housenumber : "2a",
+            tel : "01234/12345",
+            email : "musteradresse@pflege.de"
+        },
+        patients : 325
+    },
+    {
+        username : "SozialStationDortmund",
+        password : "123456abc",
+        adress : {
+            plz : 12345,
+            city : "Musterstadt",
+            street : "Musterstaße",
+            housenumber : "2a",
+            tel : "01234/12345",
+            email : "musteradresse@pflege.de"
+        },
+        patients : 964
+    }
+
+]
 
 
+document.getElementById("modal").addEventListener("click", closeModal);
+document.getElementById("logIn").onclick = function() {document.getElementById("modal").style.display = "unset"};
+
+
+function closeModal(e){
+
+    if(e.target.id == "modal"){
+
+        document.getElementById("modal").style.display = "none"
+
+    }
+
+    return
+
+}
