@@ -173,9 +173,9 @@ let patientenAkten = {
 /*        User          */
 /************************/
 
-let users = {
+let users = [
 
-    SozialstationMusterstadt : {
+    {
         username : "SozialStationMusterstadt",
         password : "123456abc",
         adress : {
@@ -188,7 +188,7 @@ let users = {
         },
         patients : 541
     },
-    SozialstationBuxdehude : {
+    {
         username : "SozialStationBuxdehude",
         password : "123456abc",
         adress : {
@@ -201,7 +201,7 @@ let users = {
         },
         patients : 325
     },
-    SozialstationDortmund : {
+    {
         username : "SozialStationDortmund",
         password : "123456abc",
         adress : {
@@ -215,7 +215,7 @@ let users = {
         patients : 964
     }
 
-}
+]
 
 
 document.getElementById("modal").addEventListener("click", closeModal);
